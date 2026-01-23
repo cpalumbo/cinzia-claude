@@ -1,173 +1,87 @@
-# Project Memory
+# Personal OS Project
 
-## Stack
+My personal OS. A productivity system I use for business analysis, document creation, job search, and executing go-to-market work across my ventures and side projects.
 
-- **Frontend**: Next.js, React 18+, TypeScript
-- **UI**: shadcn/ui (Radix primitives) + Tailwind CSS
-- **Backend**: Node.js/TypeScript OR Python 3 (FastAPI)
-- **Database**: SQLite (prototypes) or PostgreSQL (production)
-- **Package Manager**: pnpm (Node) / pip3 with venv (Python)
+## Core Principles
 
-## Critical Rules
+- **Simplicity first**: Prefer straightforward solutions over clever ones
+- **Security-conscious**: Never expose sensitive data; always use virtual environments for Python
+- **Practical outputs**: Focus on usable deliverables, not perfect code
 
-### 1. Verification Loop (MOST IMPORTANT)
-- **NEVER** claim code works without running tests to prove it
-- After writing code: test → type-check → lint → build
-- Fix errors yourself before presenting results
-- If you can't test something, say so explicitly
+## Python Requirements
 
-### 2. Work Modularly
-- Complete one module at a time
-- Show test results before proceeding
-- Be explicit about unknowns—don't guess
-
-### 3. Python Virtual Environments (NON-NEGOTIABLE)
-- **NEVER** install packages globally
-- Always: `python3 -m venv venv && source venv/bin/activate`
-- Use `python3` and `pip3` explicitly
-- Add `venv/` to `.gitignore`
-
-### 4. Do not over-engineer solutions 
-- Solve the actual problem, not hypothetical future problems
-- Prefer stdlib over dependencies, dependencies over custom code
-- **Ask before adding** any new dependency
-- Check bundle size / install footprint before suggesting packages
-- For Python: prefer stdlib (pathlib, json, csv, urllib) 
-- For Node: prefer native fetch, built-in Node APIs
-
-## Commands
-
+**Always use a virtual environment:**
 ```bash
-# Development
-pnpm dev                    # Start dev server
-pnpm build                  # Production build
-pnpm type-check             # TypeScript check
+# Create if it doesn't exist
+python -m venv .venv
 
-# Testing (run frequently)
-pnpm test                   # All tests
-pnpm test:watch             # Watch mode
-pnpm test:coverage          # With coverage
+# Activate before any Python work
+source .venv/bin/activate  # macOS/Linux
+# .venv\Scripts\activate   # Windows
 
-# Code Quality
-pnpm lint                   # Lint
-pnpm lint:fix               # Lint + fix
-pnpm format                 # Prettier
-
-# shadcn
-pnpm dlx shadcn-ui@latest add [component]
-
-# Prisma
-pnpm prisma generate        # Generate client
-pnpm prisma migrate dev --name [name]
-pnpm prisma studio          # DB GUI
-
-# Python
-python3 -m venv venv
-source venv/bin/activate
-pip3 install -r requirements.txt
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-## Design System
+If `requirements.txt` doesn't exist, create one when adding new packages.
 
-**Use shadcn/ui defaults.** Only customize when necessary.
+## File Organization
 
-### Core Principles
-- Neutral palette: black, white, grays (minimal color)
-- Generous whitespace: `p-6`, `gap-6`, `space-y-6`
-- Rounded corners: `rounded-lg` minimum
-- Soft shadows: `shadow-lg`, `shadow-xl`
-- Smooth transitions: `transition-all duration-200`
-
-### Component Usage
-```tsx
-// Use shadcn components as-is
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-
-// Glass effects (use sparingly—hero sections, modals only)
-className="backdrop-blur-md bg-white/50 dark:bg-black/50 border-slate-200/50"
+```
+/
+├── .claude/                    # Claude Code agents (do not edit manually)
+├── commands/                   # Slash commands
+├── skills/                     # Claude Code skills
+│
+├── projects/                   # All work organized by domain
+│   ├── job-search/
+│   │   ├── scripts/            # Project-specific automation
+│   │   ├── data/
+│   │   └── outputs/
+│   ├── aprovo/
+│   │   ├── scripts/
+│   │   ├── leads/
+│   │   └── outputs/
+│   ├── finance/
+│   │   ├── scripts/
+│   │   ├── data/
+│   │   └── outputs/
+│   └── <new-project>/          # Follow same pattern
+│
+├── scripts/                    # Cross-project utilities only
+├── templates/                  # Reusable doc/email templates
+│
+└── CLAUDE.md
 ```
 
-### Don'ts
-- Don't over-format with excessive headers/lists
-- Don't use colorful palettes—stick to neutrals
-- Don't use glassmorphism everywhere—it's for special elements
-- Don't use emojis unless user does
+**Script placement rule:**
+- `projects/<name>/scripts/` → operates on that project's data
+- Root `scripts/` → generic utilities reusable across projects
 
-## Code Style
+## Output Guidelines
 
-### TypeScript
-- Strict mode enabled
-- Explicit return types
-- `interface` for objects, `type` for unions
-- Avoid `any`—use `unknown` if truly unknown
+| Task | Preferred Format | Location |
+|------|------------------|----------|
+| Data exports | CSV (UTF-8) | `projects/<name>/data/` |
+| Generated reports | Markdown or DOCX | `projects/<name>/outputs/` |
+| Spreadsheet analysis | Excel (.xlsx) | `projects/<name>/outputs/` |
+| Interactive dashboards | Streamlit | `projects/<name>/scripts/` |
+| Presentations | PPTX | `projects/<name>/outputs/` |
+| Lead/prospect lists | CSV (name, company, email, status) | `projects/<name>/leads/` |
+| Outreach sequences | Markdown with {{placeholders}} | `templates/` |
 
-### React
-- Functional components + hooks only
-- Named exports (not default)
-- Extract reusable logic into custom hooks
-- Use `cn()` for conditional Tailwind classes
+## Security Rules
 
-### Naming
-- Components: `PascalCase.tsx`
-- Hooks: `useCamelCase.ts`
-- Utils: `camelCase.ts`
-- Constants: `UPPER_SNAKE_CASE`
+- **Never hardcode**: API keys, passwords, or personal identifiers
+- **Use `.env` files**: For any credentials (and gitignore them)
+- **Sanitize outputs**: Remove sensitive data before sharing files
+- **No network calls**: Without explicit approval for new external services
 
-## Architecture
+## What This Project Is NOT For
 
-### State Management
-- Local: `useState`
-- Shared: Context API
-- Server data: TanStack Query
-- Forms: React Hook Form + Zod
+- Complex software development and architecture
+- Production-grade systems
 
-### API Design
-- REST with versioning: `/api/v1/resource`
-- Proper HTTP methods and status codes
-- Input validation on all endpoints
-- Consistent error response format
+## Dependencies
 
-### Database
-- SQLite for prototypes (zero config)
-- PostgreSQL for production
-- Always use Prisma migrations
-- Use transactions for multi-step operations
-
-## Testing
-
-Write tests for:
-- All new features
-- Bug fixes (regression tests)
-- Edge cases and error handling
-
-Verification workflow:
-1. Write code
-2. Write/update test
-3. Run test → confirm pass
-4. Run full suite
-5. Type-check and build
-6. Only then consider "done"
-
-## Error Handling
-
-- React: Error boundaries
-- API: Typed error classes
-- User-facing: Friendly messages
-- Logging: Structured, no sensitive data
-
-## Security Basics
-
-- Validate all user input
-- Sanitize before rendering
-- Never commit `.env` files
-- Document required vars in `.env.example`
-
-## Checklist Before Commit
-
-- [ ] Tests pass
-- [ ] Types correct (`pnpm type-check`)
-- [ ] No console.logs/debug code
-- [ ] Linted and formatted
-- [ ] Accessible (keyboard nav, ARIA labels)
-- [ ] Build succeeds
+Minimize external packages. Prefer stdlib when reasonable; when not, use popular well-maintained libraries.
