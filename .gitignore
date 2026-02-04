@@ -1,0 +1,15 @@
+# Confidential - cofounder information
+.claude/agents/docs/startup-ideas/aprovo/
+
+# Environment and secrets
+.env
+.env.*
+*.local
+
+# OS files
+.DS_Store
+
+# Python
+.venv/
+__pycache__/
+*.pyc

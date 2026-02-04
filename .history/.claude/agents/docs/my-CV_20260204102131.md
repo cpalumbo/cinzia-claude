@@ -1,0 +1,51 @@
+CINZIA PALUMBO
+Founder | DeepTech GTM Strategy & Execution | International Experience (China, US, Latam, EU) cinzia.palumbo@gmail.com | linkedin.com/in/cpalumbo | WeChat: cpalumbo
+
+PROFESSIONAL SUMMARY
+VC-backed founder and GTM lead specialized in deep tech. Co-founder of Genie, building developer tools for the Julia scientific programming language, with general management, fundraising (raised $1.2M), and GTM responsibilities. Previously at drone leader DJI in China during a period of hyper-growth, leading strategic partnerships and marketing teams and launching industry-defining products like the Mavic line. Scaled a partnership with Apple into a $46M business, managed 2 cross-functional teams (7 direct reports), and spent time on the ground in the US and LATAM to expand the business. Tech-savvy and hands-on, comfortable working with product and R&D teams.
+
+- VC-backed founder and GTM lead with experience in Deep Tech, including Developer Tools, AI, scientific computing, drones, and mobile robotics
+- 5 years at DJI (drones/robotics) including leading global strategic partnerships and international marketing teams
+- Core skills: general management, P&L ownership, fundraising, cross-functional team management, GTM strategy and execution, GTM engineering, recruiting.
+- GTM expertise: experienced in strategic partnerships, BD, business development, marketing, demand generation, sales, media relations, government relations, developer relations, spokesperson.
+- Technical comfort: working with engineering & product teams (use of Jira, Github), AI tooling like Claude Code and Cursor for web development and automations; comfortable with modern product, sales, and marketing stacks (analytics, CRM, prospecting and sales tools, microsoft office), 
+- Languages: English, Spanish, Italian (native), Mandarin Chinese (intermediate)
+- International: experience working in China, US, LATAM, EU
+
+WORK EXPERIENCE
+Genie | genieframework.com | Nov 2021 – Present
+Role: Co-Founder – Barcelona, Spain
+We built the #1 open source framework for developing data applications in Julia, a high performance scientific computing language. Business model: open-core SaaS with PLG motion.
+- Raised $1.2M pre-seed from leading EU and US investors (Speedinvest & Expa, among others) - P&L ownership, managed recruiting, HR (team of 7 at peak), finance, legal and investor relations - Scaled open-source downloads by 20x post-fundraising (354k cum), reaching 12k users
+- Led a GTM motion spanning demand generation (docs, technical content, community building and support, strategic partnerships, and events), inbound lead capture (website, webinars, Genie Builder free tier), targeted outbound, and founder-led sales from qualification to close
+- Drove adoption by teams at Merck, Amazon, ASML, LexisNexis, and deep-tech startups
+- Closed 24 paying customers across US, EU, and Asia including pharma, finance, biotech
+Winding down the company in 2026 following a structural market shift toward AI-assisted coding and mainstream programming languages and tooling.
+Dhome | Sep 2020 – Oct 2021
+Role: Co-Founder – Hong Kong
+Bootstrapped to validate MVPs in 3D computer vision: a 3D space capture app for LiDAR-equipped iOS devices; an API using neural rendering & novel view synthesis to create product 3Ds for ecom.
+DJI (World's leading drone and mobile robotics company) | dji.com | Sep 2018 – Sep 2020
+Role: Global Key Accounts Director (Strategic Partnerships) – Shenzhen / Hong Kong, China
+- Managed a global strategic partnership with Apple, scaled it to $46M/year in revenue (team of 4) - Led commercial strategy with Apple Retail; pursued R&D & corporate development opportunities - Stakeholder relations: Apple WW DevRelations and executive stakeholders at Apple and DJI
+    
+DJI | Apr 2016 – Aug 2018
+Role: Global Senior Brand Manager & Head of LATAM Marketing – Shenzhen / Hong Kong, China
+- Built and led two teams (7 direct reports) for global brand marketing and LATAM regional marketing - Contributed to drive +13pp global market share growth and 2.5x revenue increase during tenure
+- Contributed to DJI’s most successful product launches: Mavic Pro, Mavic Air, and Spark drones, also recognized as best innovations of the 2010s by US media (TIME, The Verge, Fast Company)
+- Sourced strategic partnerships with Apple, Twitch, and Disney
+- Kickstarted retail and shopper marketing programs
+- LATAM: contributed to $148M revenue (+34.5% YoY); managed PR crises & government relations; spokesperson for the region
+- Led post-acquisition integration of Hasselblad’s sales & marketing teams (assignment in Sweden)
+Grupo Bimbo (FMCG multinational) | Feb 2011 – Aug 2015
+Role: Consumer Marketing Manager → Category Management Consultant – Barcelona / China - Managed €100M category P&L and €7.5M marketing budget for Iberia region
+- Grew market share by 7pp despite severe economic crisis and the rise of cheap Private Labels - Launched OROWEAT (Top 3 food launch of 2014, Kantar)
+- Led channel development program achieving 20% YoY revenue growth in convenience stores - Consulted on category management for China expansion
+Earlier: Shopper Marketing at Sara Lee (2010-2011); Analyst at TradeLab and Research Assistant at SDA Bocconi (2010).
+
+EDUCATION
+ESADE Business School/ Bocconi (Double Degree) – MSc, Marketing Management (2008 – 2010) UCLA Anderson School of Management – Innovation & Technology Management, onsite (2009) Other certifications: CS50 Computer Science (Harvardx), Intermediate Python (DataCamp), AI Foundations: Machine Learning (LI Learning)
+
+CORE SKILLS
+Business: Go-To-Market (GTM) Strategy & Engineering, General Management, P&L Management, Fundraising, Strategic Partnerships, Business Development, Marketing, Demand Gen, Sales, Recruiting. Technical: web development, scripting, and workflow automation using AI-assisted tooling (Cursor IDE, Claude Code). Fluent in modern product, marketing, and sales stacks (PostHog for product analytics; HubSpot & Attio for CRM; Apollo and Expandi for BD/sales).
+Languages: English (Fluent), Spanish (Fluent), Italian (Native), Mandarin Chinese (Intermediate)
+
